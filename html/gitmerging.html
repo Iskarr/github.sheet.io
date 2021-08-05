@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Localized</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/2b0e3d1994.js"
+      crossorigin="anonymous"
+    ></script>
+     <!-- CSS File -->
+     <link rel="stylesheet" href="/index.css" />
+     <link rel="stylesheet" href="../css/gitStart.css" />
+     <link rel="stylesheet" href="../css/button.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html"
+        ><i class="fab fa-github"></i> GitHub Commands</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://gist.github.com/cferdinandi/ef665330286fd5d7127d"
+              target="_blank"
+              >Cheat Sheet</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              More Pages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./gitStart.html">Project Setup</a>
+              <a class="dropdown-item" href="./gitlocal.html">Initialize</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./gitmerging.html"
+                >Merging Commands</a
+              >
+              <a class="dropdown-item" href="./gitRemove.html"
+                >Remove Commands</a
+              >
+              <a class="dropdown-item" href="./gitTrouble.html"
+                >Trouble Shooting</a
+              >
+            </div>
+          </li>
+        </ul>
+        <form id="search-books" class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search for a course"
+            aria-label="Search"
+          />
+        </form>
+      </div>
+    </nav>
+    
+    <div class="container">
+      
+      <h1 class="header_title">GitHub Branching and Merging</h1>
+      <div class="next_options">
+        <button onclick="window.location.href='gitlocal.html'" 
+         type="button" class="btn btn-outline-primary">Go back</button>
+        <button
+        onclick="window.location.href='gitremove.html'" type="button" id="next" class="btn btn-outline-primary">next</button>
+      </div>
+      <div
+        class="modal fade"
+        id="imagemodal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span
+                ><span class="sr-only">Close</span>
+              </button>
+              <img src="" class="imagepreview" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <article>
+        <div class="text">
+         <p class="info">
+          Welcome to the third section where you will learn how to 
+          manage GitHub branches and merging those branches into your main branch.
+          What is a branch? 
+          <br>
+          Think of a tree, you have a lot of branches and so can your repositories.
+          When you initialized your first GitHub project you created a branch called "main," that should
+          be your current branch.
+          <br>
+          lets first learn how to check which branch you are working in. 
+          Type the following command inside the terminal you had open from the previous module:
+          <br><code>git branch</code>
+          <br>You should see the name of the current branch you 
+          are working in with an asterick next to it.
+         </p>
+        </div>
+        <div class="image">
+          <img
+            class="img-responsive"
+            src="../images/new_branch.png"
+            alt="main page"
+          />
+        </div>
+        <div class="text">
+         <p class="info"> Now that you know how to see which branch you are working it, 
+           its time to create a new one and move over to that new branch.
+           Use the following commands to create a new branch called <span style="color: blue;">block2</span> and move to that new branch.
+          <br><code>git branch block2</code>
+          <br><code>git checkout block2</code>
+          <br>(running this again command will verify that you are on block2 with an asterick next to it.)
+          <br><code>git branch</code>
+          <br>
+          <hr>
+          So what happens if you made a mistake in naming your branch?
+          You have two options. Your first option is to rename the branch 
+          or delete the branch and start over.
+          <br><span class="text-danger"> make sure to add a space between your old branch name and the name you 
+            want to replace the old name with.
+          </span>
+          <br><code>git branch -m old_branch_name new_branch_name </code>
+          <br><span>If you prefer to just start over, you can just delete a branch by using the following
+            command:
+            <br><code>git branch -d branch_name</code>
+  </span>
+          <hr>
+          <p class="note">something that you can run is <code>git checkout -b BRANCH_NAME</code> (use -b with git checkout to both create a new branch and check it out at the same time.)</p>
+        </div>
+        <div class="image">
+          <img
+            class="img-responsive"
+            src="../images/rename_branch.png"
+            alt="main page"
+          />
+        </div>
+        <div class="text"  id="text3">
+         <span class="info">Now that you can create, checkout, rename, and delete branches, what is next? 
+           The next step would be to merge and push those new branches up to your 
+           GitHub project. So how do you go about merging a branch and why would you? 
+           <br>The reason is quite simple, you might have different versions of your 
+           application saved and in case something goes horribly wrong, you want a 
+           branch you can go back too. 
+           For example, if you wanted to update the main
+           application branch you would checkout main and then run this command:
+           <br><code>git merge branch_name</code>
+           <br>So when you merge, remember that you want to checkout the branch you plan to merge changes to NOT from. 
+           At this point you can just push up to your repository just use the branch you're on 
+           or checkout another branch to push as well.
+           <p class="text-danger">Remember that you cannot delete a branch that you are currently working 
+            in, check where the arrow in the image is.</p>
+        </div>
+        <div class="image">
+          <img
+            id="pop"
+            class="instruction_image"
+            src="../images/delete_branch.png"
+            alt="repository setup"
+          />
+        </div>
+      </article>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/gitStart.js"></script>
+  </body>
+</html>

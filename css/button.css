@@ -1,0 +1,14 @@
+.next_options {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  margin: 1rem;
+}
+button {
+  width: 10rem;
+}
+
+#next {
+  margin-right: 1.8rem;
+  padding-left: 1rem;
+}

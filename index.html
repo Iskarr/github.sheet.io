@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/2b0e3d1994.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="/index.css" />
+
+    <title>GitHub Commands</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="./index.html"
+        ><i class="fab fa-github"></i> GitHub Commands</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://gist.github.com/cferdinandi/ef665330286fd5d7127d"
+              target="_blank"
+              >Cheat Sheet</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              More Pages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./html/gitStart.html"
+                >Project Setup</a
+              >
+              <a class="dropdown-item" href="./html/gitlocal.html"
+                >Initialize</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./html/gitUpload.html"
+                >Upload Commands</a
+              >
+              <a class="dropdown-item" href="./html/gitRemove.html"
+                >Remove Commands</a
+              >
+              <a class="dropdown-item" href="./html/gitTrouble.html"
+                >Trouble Shooting</a
+              >
+            </div>
+          </li>
+        </ul>
+        <form id="search-books" class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search for a course"
+            aria-label="Search"
+          />
+        </form>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <h1 class="display-4">
+        <i class="fab fa-github"></i> GitHub Command Sheet
+      </h1>
+      <p class="lead">
+        This is a simple website to help you understand GitHub commands, and git
+        you managing your own projects!
+      </p>
+      <hr class="my-4" />
+      <p>
+        click the link below to get started in creating a new repository that
+        will be the main project you will be using to test your skills in
+        GitHub.
+      </p>
+      <p class="lead">
+        <a
+          class="btn btn-primary btn-lg"
+          href="https://gist.github.com/cferdinandi/ef665330286fd5d7127d"
+          role="button"
+          target="_blank"
+          >Learn more</a
+        >
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>
+        Select one of the options below to learn the corresponding Git Commands.
+      </h3>
+
+      <h3 id="notAvailable">The current course is not listed.</h3>
+
+      <div id="divA" class="card">
+        <img
+          class="card-img-top"
+          src="./images/git-logo.png"
+          alt="Card image cap"
+          style="background-color: #111"
+        />
+        <div class="card-body">
+          <h5 class="card-title">GitHub Project Setup</h5>
+          <p class="card-text">
+            Start here! You'll get GitHub setup and ready to be uploaded.
+          </p>
+          <a href="./html/gitStart.html" class="btn btn-primary"
+            >Project Setup</a
+          >
+          <hr />
+
+          <label for="Header">
+            <input
+              id="Header"
+              class="checkedBox"
+              type="checkbox"
+              aria-label="Assignment Complete?"
+            />
+            &nbsp; Assignment completed?</label
+          >
+        </div>
+      </div>
+
+      <div id="divB" class="card">
+        <img
+          class="card-img-top"
+          src="./images/git-logo.png"
+          alt="Card image cap"
+          style="background-color: #111"
+        />
+        <div class="card-body">
+          <h5 class="card-title">GitHub Upload Commands</h5>
+          <p class="card-text">Here you will upload your project to GitHub.</p>
+          <a href="./html/gitlocal.html" class="btn btn-primary"
+            >Initialize Locally</a
+          >
+          <hr />
+
+          <label for="Header1">
+            <input
+              id="Header1"
+              class="checkedBox"
+              type="checkbox"
+              aria-label="Assignment Complete?"
+            />
+            &nbsp; Assignment completed?</label
+          >
+        </div>
+      </div>
+
+      <div id="divC" class="card">
+        <img
+          class="card-img-top"
+          src="./images/git-logo.png"
+          alt="Card image cap"
+          style="background-color: #111"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Branching and Merging Git</h5>
+          <p class="card-text">
+            Create branches, check them out and merge them.
+          </p>
+          <a href="./html/gitmerging.html" class="btn btn-primary">
+            Merging Commands</a
+          >
+          <hr />
+
+          <label for="Header2">
+            <input
+              id="Header2"
+              class="checkedBox"
+              type="checkbox"
+              aria-label="Assignment Complete?"
+            />
+            &nbsp; Assignment completed?</label
+          >
+        </div>
+      </div>
+
+      <div id="divD" class="card">
+        <img
+          class="card-img-top"
+          src="./images/git-logo.png"
+          alt="Card image cap"
+          style="background-color: #111"
+        />
+        <div class="card-body">
+          <h5 class="card-title">GitHub Remove Commands</h5>
+          <p class="card-text">
+            Here you will setup a GitHub project to start practicing your GitHub
+            commands.
+          </p>
+          <a href="./html/gitRemove.html" class="btn btn-primary"
+            >Remove Commands</a
+          >
+          <hr />
+
+          <label for="Header3">
+            <input
+              id="Header3"
+              class="checkedBox"
+              type="checkbox"
+              aria-label="Assignment Complete?"
+            />
+            &nbsp; Assignment completed?</label
+          >
+        </div>
+      </div>
+
+      <!-- <div id="divE" class="card">
+        <img
+          class="card-img-top"
+          src="./images/git-logo.png"
+          alt="Card image cap"
+          style="background-color: #111"
+        />
+        <div class="card-body">
+          <h5 class="card-title">GitHub Trouble Shooting</h5>
+          <p class="card-text">
+            Here you will setup a GitHub project to start practicing your GitHub
+            commands.
+          </p>
+          <a href="./index.html" class="btn btn-primary">Trouble Shooting</a>
+          <hr />
+
+          <label for="Header4">
+            <input
+              id="Header4"
+              class="checkedBox"
+              type="checkbox"
+              aria-label="Assignment Complete?"
+            />
+            &nbsp; Assignment completed?</label
+          >
+        </div>
+      </div> -->
+    </div>
+
+    <h1>Completed sections</h1>
+    <div class="completionContainer">
+      <div id="div2" class="card">
+        <p id="btnInput">GitHub Project Setup Complete</p>
+      </div>
+      <div id="div3" class="card">
+        <p id="btnInput1">GitHub Local Initializer Complete</p>
+      </div>
+      <div id="div4" class="card">
+        <p id="btnInput2">GitHub Upload Commands Complete</p>
+      </div>
+      <div id="div5" class="card">
+        <p id="btnInput3">GitHub Remove Commands Complete</p>
+      </div>
+      <!-- <div id="div6" class="card">
+        <p id="btnInput4">GitHub Trouble Shooting Complete</p>
+      </div> -->
+    </div>
+
+    <div id="saveSection">
+      <h1>Save work</h1>
+      <input
+        class="btn btn-primary"
+        type="button"
+        id="ReserveerButton1"
+        value="save"
+        onclick="save()"
+      />
+      <input
+        type="button"
+        class="btn btn-primary"
+        id="Wisbutton1"
+        value="delete"
+        onclick="wis()"
+      />
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+    <!-- <script src="./completion.js"></script> -->
+    <script src="./js/db.js"></script>
+    <script src="./js/checked.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+.jumbotron {
+  text-align: center;
+}
+.container {
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  margin: 1rem;
+  width: 17rem;
+}
+
+.complete {
+  margin-left: 5px;
+}
+.card-title {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.card-text {
+  margin-left: 15px;
+}
+.btn-primary {
+  margin-left: 15px;
+}
+
+label {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+label:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+#saveSection {
+  text-align: center;
+  padding: 15px;
+}
+
+#notAvailable {
+  display: none;
+}
+
+#btnInput,
+#btnInput1,
+#btnInput2,
+#btnInput3,
+#btnInput4 {
+  background-color: rgb(29, 150, 11);
+  margin: 15px;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* This section is about moving the divs to the
+   complete section that should be commented out.
+*/
+
+/* #divA,
+#divB,
+#divC,
+#divD,
+#divE {
+} */
+
+#div1,
+#div2,
+#div3,
+#div4,
+#div5,
+#div6 {
+  display: none;
+}

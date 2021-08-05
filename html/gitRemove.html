@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Localized</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/2b0e3d1994.js"
+      crossorigin="anonymous"
+    ></script>
+     <!-- CSS File -->
+     <link rel="stylesheet" href="/index.css" />
+     <link rel="stylesheet" href="../css/gitStart.css" />
+     <link rel="stylesheet" href="../css/button.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="../index.html"
+        ><i class="fab fa-github"></i> GitHub Commands</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://gist.github.com/cferdinandi/ef665330286fd5d7127d"
+              target="_blank"
+              >Cheat Sheet</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              More Pages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./gitStart.html">Project Setup</a>
+              <a class="dropdown-item" href="./gitlocal.html">Initialize</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./gitmerging.html"
+                >Merging Commands</a
+              >
+              <a class="dropdown-item" href="./gitRemove.html"
+                >Remove Commands</a
+              >
+              <a class="dropdown-item" href="./gitTrouble.html"
+                >Trouble Shooting</a
+              >
+            </div>
+          </li>
+        </ul>
+        <form id="search-books" class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search for a course"
+            aria-label="Search"
+          />
+        </form>
+      </div>
+    </nav>
+    
+    <div class="container">
+      
+      <h1 class="header_title">GitHub Remove Commands</h1>
+      <div class="next_options">
+        <button onclick="window.location.href='gitmerging.html'" 
+         type="button" class="btn btn-outline-primary">Go back</button>
+        <button
+        onclick="window.location.href='../index.html'" type="button" id="next" class="btn btn-outline-primary">next</button>
+      </div>
+      <div
+        class="modal fade"
+        id="imagemodal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span
+                ><span class="sr-only">Close</span>
+              </button>
+              <img src="" class="imagepreview" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <article>
+        <div class="text">
+         <p class="info">
+          Welcome to the fourth section where you will learn how to 
+          remove GitHub repositories. The reason you might want to delete a repository might be for many reasons, but knowing how is crucial.
+          The first thing you will want to do before deleting a repository is removing git from your project.
+          You can do that by typing the following command in your terminal(this action is permanent so be careful.):
+          <br><code>rm -rf .git/</code>
+          <br>Once you have removed git from your project, you can move forward with removing your GitHub repository.
+        </p>
+        </div>
+        <div class="image">
+          <img
+            class="img-responsive"
+            src="../images/settings.png"
+            alt="main page"
+          />
+        </div>
+        <div class="text">
+         <p class="info">
+           Go to your project on <a href="github.com">github.com</a> and click 
+           on the settings section, and scroll all the way down until you see the 
+           <span class="text-danger">danger section</span>
+           and click delete this repository.
+         </p>
+        </div>
+        <div class="image">
+          <img
+            class="img-responsive"
+            src="../images/settings_bottom.png"
+            alt="main page"
+          />
+        </div>
+        <div class="text"  id="text3">
+         <span class="info">
+           You will be greeted with a modal to make sure you want to 
+           delete the repository and will require you to type in your username/project_name,
+           and then hit the "I understand the consequences, delete the repository" button.
+           <br>
+           Once you confirm the deletion of your repository, its gone and you're done, 
+           you can create a new one and then reinitialize git on your local project.
+         </span>
+        </div>
+        <div class="image">
+          <img
+            id="pop"
+            class="instruction_image"
+            src="../images/settings_delete.png"
+            alt="repository setup"
+          />
+        </div>
+      </article>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/gitStart.js"></script>
+  </body>
+</html>
