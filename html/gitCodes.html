@@ -93,13 +93,15 @@
       </div>
     </nav>
 
+    
     <div class="container">
-      <h1 class="header_title">GitHub Project Setup</h1>
+      
+      <h1 class="header_title">GitHub Localized Repository Setup</h1>
       <div class="next_options">
-        <button onclick="window.location.href='../index.html'" 
+        <button onclick="window.location.href='./gitStart.html'" 
          type="button" class="btn btn-outline-primary">Go back</button>
         <button
-        onclick="window.location.href='gitlocal.html'" type="button" id="next" class="btn btn-outline-primary">next</button>
+        onclick="window.location.href='./gitmerging.html'" type="button" id="next" class="btn btn-outline-primary">next</button>
       </div>
       <div
         class="modal fade"
@@ -122,77 +124,62 @@
         </div>
       </div>
 
-      <article class="article-container">
-        <!-- First Text and Image -->
+      <article>
         <div class="text">
-          <div class="circle">
-            <span class="number">1</span>
-          </div>
-          <p style="margin: 15px;">Welcome to the first section where you will first setup your GitHub
-            project. You will need to login to an account at:
-            <a href="http://github.com">github.com</a> and then you will need to
-            follow these instructions to setup your first empty repository. Once
-            you are logged into GitHub, click the following button to create your
-            new repository.
-            <p class="note">
-              Note: Always look at the red rectangles to see where the next step
-              will be.
-            </p></p>
-        </div>
-        <div class="image">
-          <div class="circle">
-            <span class="number">1</span>
-          </div>
-          <img
-            class="img-responsive"
-            src="../images/main_page.png"
-            alt="main page"
-          />
-        </div>
-        <!-- Second Text and Image -->
-        <div class="text">
-          <div class="circle">
-            <span class="number">2</span>
-          </div>
-          <p style="margin: 15px;">
-            Once you open the next part you will see where you can add the title
-          of your project. You can also see that you can add a description and
-          set the project to public or private, I would suggest leaving them
-          public for now. Finally, you have some options to add with the
-          initialization of your respository, and we will leave those options
-          blank for now as well.
+         <p class="info">
+          Welcome to the second section where you will initialize your GitHub
+          project. You must be logged into your account. You will need have a folder you plan to setup this project in.
+          <br>
+          Open up VS Code and use the command <br><code>CTRL + O or CMD + O </code> to open a folder that you want your project in.
+          Once you have the project open you will need to open the terminal using the following command: <br><code>Control(^) key + tilda key (`)</code>
+          You should have something like this:
+          <p class="note">
+            Note: Always look at the red rectangles to see where the next step
+            will be.
           </p>
+         </p>
         </div>
         <div class="image">
-          <div class="circle">
-            <span class="number">2</span>
-          </div>
           <img
             class="img-responsive"
-            src="../images/start_page.png"
+            src="../images/open_folder.png"
             alt="main page"
           />
         </div>
         <div class="text">
-          <div class="circle">
-            <span class="number">3</span>
-          </div>
-          <p style="margin: 15px;">Once you've completed the steps above, you should have a repository
-            setup inside your GitHub account. You will want to use the copy button
-            which should be highlighted in red. You'll want to manually copy the
-            following command for the next course in this GitHub course.
-            <code>git remote add origin "Your GitHub website url"</code>. Head
-            back to the main page to check this course complete and start the next
-            course.</p>
+         <p class="info"> Now that you have the terminal open, your project is open in VS code, 
+          its time to initialize your project locally. 
+          <br><p class="note">(You will want to verify you 
+            have git installed by running this command: <br><code>git --version</code> </p>
+          if you get an error you might not have git installed, 
+          which means you will need to install it from 
+          this website: <a href="https://git-scm.com/">https://git-scm.com/</a></p>
         </div>
         <div class="image">
-          <div class="circle">
-            <span class="number">3</span>
-          </div>
+          <img
+            class="img-responsive"
+            src="../images/open_terminal.png"
+            alt="main page"
+          />
+        </div>
+        <div class="text"  id="text3">
+         <span class="info">If everything is working from this point and you have a 
+          version of git showing up in your terminal, type in the 
+          following commands to locally set up and connect your project to your 
+          GitHub project in the cloud.
+           <br><code>git init</code>
+           <br><code>git add .</code>
+           <br><code>git commit -m "Your message here"</code>
+           <br><code>git branch -M main</code>
+           <br><code>git remote add origin https://github.com/adonovan28/cool_project101.git</code> 
+           <p class="note">(Make sure to use your own link, check back into section one to find your link)</p>
+             <code>git push -u origin main</code></span>
+        </div>
+        <div class="image">
           <img
             id="pop"
             class="instruction_image"
-            src="../images/copy_page.png"
+            src="../images/uploaded.png"
             alt="repository setup"
           />
         </div>

@@ -3,6 +3,25 @@ body {
   background-color: #212529 !important;
 }
 
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+.number {
+  font-size: 20px;
+  font-weight: 500;
+  color: #e83e8c;
+}
+
 .header_title {
   color: #fff;
   text-align: center;
@@ -12,20 +31,22 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .note {
   color: red;
   padding: 0;
   margin: 0;
 }
-article {
+
+.article-container {
   display: grid;
-  grid-template-columns: 2;
   background: grey;
   align-items: center;
   height: 100%;
   width: 100vw;
   padding: 0;
-  margin: 0;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 .image {
@@ -33,18 +54,21 @@ article {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
     rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
     rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  position: relative;
 }
 
 .text {
+  text-align: center;
   background-color: #212529;
   color: #fff;
   margin: 15px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
     rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
     rgba(0, 0, 0, 0.07) 0px 16px 16px;
-  width: 85%;
+  width: 95%;
   font-size: 1.3em;
   overflow-wrap: break-word;
+  position: relative;
 }
 
 .image:nth-of-type(4) {
@@ -52,6 +76,12 @@ article {
 }
 
 @media screen and (min-width: 625px) {
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 620px) {
   img {
     width: 100%;
   }
@@ -67,12 +97,12 @@ article {
     margin: 0;
   }
 
-  article {
+  .article-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     background: grey;
     height: 100%;
     width: 100vw;
+    grid-template-columns: 1fr 1fr;
   }
   .text:nth-of-type(3) {
     grid-column: 2;
@@ -80,7 +110,6 @@ article {
   }
 
   .text {
-    margin: 19px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
       rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
       rgba(0, 0, 0, 0.07) 0px 16px 16px;

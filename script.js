@@ -34,6 +34,13 @@ sections = [
     imageHolder: "https://via.placeholder.com/150/",
     complete: " Assignment Complete?",
   },
+  {
+    title: "GitHub Codes Section",
+    text: "Here is a list of codes to run in the commandline to upload your project if you forgot the commands.",
+    link: "github.com",
+    imageHolder: "https://via.placeholder.com/150/",
+    complete: " Assignment Complete?",
+  },
 ];
 
 let completeDiv = document.getElementById("div2");
@@ -101,7 +108,7 @@ let completeDiv = document.getElementById("div2");
 const searchBar = document.forms["search-books"].querySelector("input");
 searchBar.addEventListener("keyup", function (e) {
   const term = e.target.value.toLocaleLowerCase();
-  const books = document.getElementsByTagName("h5");
+  const books = document.getElementsByTagName("h3");
   let notAvailable = document.getElementById("notAvailable");
 
   let hasResults = false;
